@@ -29,6 +29,8 @@ flatbuffers==25.2.10
 frozenlist==1.6.0
 future==1.0.0
 gast==0.6.0
+gunicorn==21.2.0
+
 geocoder==1.38.1
 google-ai-generativelanguage==0.6.15
 google-api-core==2.25.0rc1
