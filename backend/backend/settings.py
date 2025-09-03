@@ -28,7 +28,11 @@ SECRET_KEY = 'django-insecure-9mm3xuea!fl()8klj#*$_s2#f8mn!h-b!(c=gyn09m8c6he*i!
 DEBUG = True
 
 # Hosts/domain names that are valid for this site
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "agriverse-gd7l.onrender.com"
+]
 
 # Application definition
 INSTALLED_APPS = [
@@ -126,6 +130,7 @@ client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 # CORS settings: allow requests from frontend running on localhost:5173
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://agri-verse-bzwt.vercel.app",   # Vercel frontend
 ]
 
 # API keys for external services
