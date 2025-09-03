@@ -9,7 +9,7 @@ const Weather = () => {
 
   const fetchWeather = async (forecastDays = 7) => {
     setLoading(true);
-    let url = "http://127.0.0.1:8000/api/current-weather/";
+    let url = "https://agriverse-gd7l.onrender.com/api/current-weather/";
     let options = {};
     if (forecastDays !== 7) {
       options = {
